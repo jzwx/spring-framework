@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+    <bean id="Student" class="main.java.com.jzwx.spring.demo.pojo.Student">
+        <property name="name" value="Hover"/>
+        <property name="add" value="China"/>
+    </bean>
+
+    <bean id="StudentService" class="main.java.com.jzwx.spring.demo.service.StudentService">
+        <property ref="Student"/>
+    </bean>
+
+    <bean id="PeopleTalk" class="main.java.com.jzwx.spring.demo.pojo.PeopleTalk">
+        <property name="username" value="AOP"/>
+        <property name="age" value="18"/>
+    </bean>
+
+    <bean id="PeopleTalkService" class="main.java.com.jzwx.spring.demo.service.PeopleTalkService">
+        <property ref="PeopleTalk"/>
+    </bean>
+</beans>
